@@ -15,3 +15,35 @@
 .screen-header__icons span {
     margin-left: 25px;
 }
+
+.screen-header__icons {
+    position: relative;
+}
+
+.header__alert {
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    color: tomato;
+    position: absolute;
+    left: 75px;
+    bottom: 25px;
+}
+
+
+@keyframes rotateCog {
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.screen-header__icons .fa-cog:hover {
+    animation: rotateCog 1s linear infinite;
+}
